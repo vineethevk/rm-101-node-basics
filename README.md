@@ -1,4 +1,4 @@
-1. Create an Exporess Server and Deploy it on port `8000`.
+1. Create an Express Server and Deploy it on port `8000`.
 2. Create following API's on the server.
    - GET `/` returns [HTML file](./src/assets/users.html).
    - GET `/users` returns a [JSON file](./src/assets/user.json)
