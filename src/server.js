@@ -5,6 +5,7 @@ let app = express();
 const router = express.Router();
 var data = require("./assets/user.json")
 app.use(express.json());
+app.use("/", router)
 
 const fs = require('fs');
 
@@ -25,7 +26,7 @@ router.post("/users", (req, res) => {
     fs.writeFileSync(path.join(__dirname + "/assets/user.json"), Post);
     res.send(data);
 })
-app.use("/", router)
+
 app.listen(8000, () => {
     console.log("Listening 8000")
 })
